@@ -14,63 +14,36 @@
 </head>
 
 <body>
-    <!-- the select player character screen -->
-    <div id="imageBackground" class="container-fluid">
-        <img class="img-fluid" src="./assets/images/logo.png" alt="zombie title logo" />
-        <br>
-        <br>
-        <h1>Choose wisely:</h1>
-        <br>
-        <div id="game" class="ctr container card-deck">
+<div class="container">
+    <h1>Zombie Survival RPG Game!</h1>
+    <div id="characterSelection">
+    </div>
+    <div class="col-lg-6 pull-left">
+        <h2>Your Character</h2>
+        <div id="character">
+
+        </div>
+        <h2>Fight Section</h2>
+        <div id="fightSection">
+            <button id="attack" class="btn btn-danger">Attack!</button>
         </div>
 
-        <!-- the main game screen -->
-        <div id="firstRow" class="bg-trans container-fluid">
-            <div class="row">
-                <div class="col-12 ctr">
-                    Enemies remaining:
-                    <div id="defendersLeftDiv"></div>
-                </div>
-            </div>
+        <div id="status">
         </div>
-        <hr>
-        <div class="row text-center paddingTop">
-            <div class="col-5">
-                Player:
-                <div class="container" style="width: 30%;">
-                    <div id="playerDiv"></div>
-                    <div id="playerHealthDiv"></div>
-                </div>
-            </div>
-            <div class="col-2 paddingTop">
-                <!-- VS. -->
-                <img src="assets/images/Vs.jpg" alt="VS" width="100" />
-            </div>
-            <div class="col-5">
-                Enemy:
-                <div class="container">
-                    <div id="defenderDiv"></div>
-                    <div id="defenderHealthDiv"></div>
-                </div>
-            </div>
+
+        <button id="restart" class="btn btn-success">Restart</button>
+    </div>
+    <div class="col-lg-6 float-left">
+        <h2>Defender</h2>
+        <div id="defender">
         </div>
-        <!-- holds the button -->
-        <div class="row">
-            <div class="col-12 btn">
-                <div id="msg"></div>
-                <br>
-                <button type="button" name="attack" id="attackBtn" class="btn btn-dark btn-lg">ATTACK!</button>
-            </div>
+        <h2>Enemies</h2>
+        <div id="defenderArea">
+
         </div>
     </div>
-    <div class="container-fluid text-center" style="padding-bottom:25px;">
-        <div id="globalMsg">
-            <p>
-                CONGRATULATIONS!
-                <br> You saved yourself, for the day.
-            </p>
-        </div>
-    </div>
+
+</div>
 
     <footer class="fixed-bottom text-center">
         Created by
@@ -80,10 +53,6 @@
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
-        crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
-        crossorigin="anonymous "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
         crossorigin="anonymous "></script>
     <script src="./assets/javascript/game.js "></script>
 </body>
