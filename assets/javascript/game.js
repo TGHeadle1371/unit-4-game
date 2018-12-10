@@ -1,6 +1,9 @@
 
+//On document ready
 
 $(document).ready(function () {
+
+    // Variables
 
     var survivor;
     var zombieEasy;
@@ -12,6 +15,7 @@ $(document).ready(function () {
     var defenders = [];
     var defender = null;
 
+    //Start game function, list characters and stats
     function startGame() {
         survivor = {
             id: 0,
@@ -26,8 +30,8 @@ $(document).ready(function () {
         zombieEasy = {
             id: 1,
             name: "Slow Zombie",
-            healthPoints: 100,
-            baseAttack: 8,
+            healthPoints: 120,
+            baseAttack: 10,
             attackPower: 8,
             counterAttackPower: 5,
             img: "./assets/images/zombieEasy.jpeg"
@@ -37,8 +41,8 @@ $(document).ready(function () {
             id: 2,
             name: "Strong Zombie",
             healthPoints: 150,
-            baseAttack: 9,
-            attackPower: 9,
+            baseAttack: 12,
+            attackPower: 10,
             counterAttackPower: 10,
             img: "./assets/images/zombieMedium.jpeg"
         }
@@ -46,10 +50,10 @@ $(document).ready(function () {
         zombieHard = {
             id: 3,
             name: "Brute Zombie",
-            healthPoints: 100,
-            baseAttack: 12,
+            healthPoints: 170,
+            baseAttack: 14,
             attackPower: 12,
-            counterAttackPower: 12,
+            counterAttackPower: 15,
             img: "./assets/images/zombieHard.jpeg"
         }
         // reset character selected
