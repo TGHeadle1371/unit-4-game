@@ -3,21 +3,26 @@ html {
     height: 100%;
     background-image: url('../images/logo.jpg');
     background-position: cover;
-    max-height: 100%;
     background-repeat: no-repeat;
+    position: absolute;
     color: white;
 }
+
 
 h1,
 h2 {
     color: white;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 body {
     opacity: 0.4;
+    background-color: black;
     position: absolute;
+    text-align: center;
     width: 100%;
-    align-content: flex-start;
+    height: 100%;
     
 }
 
@@ -33,7 +38,22 @@ body {
     width: auto;
     
 }
-
+#attack {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+#restart {
+      position: absolute;
+      top: 50%;
+      left: 90%;
+      transform: translate(-50%, -50%);
+}
+#fightSection {
+    background: white;
+    
+}
 #status {
     color: black;
     font-size: 20px;
