@@ -7,53 +7,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Amatic+SC:700" rel="stylesheet">
+
 </head>
 
 <body>
-<div class="container">
-    <h1 id="title">Zombie Survival RPG Game!</h1>
-    <div id="characterSelection">
+    <!-- container -->
+    <div class="container">
+
+        <!-- Title Row -->
+        <div class="row-md-12">
+            <div>
+                <h1 id="title">Zombie Survival RPG Game!</h1>
+            </div>
+        </div>
+        <hr style="background-color: white">
+        <!-- Characters -->
+        <div class="row-md-12 text-center text-white pb-4">
+            <h2> How To Play </h2>
+            <ul class="list-group" id="listGroup">
+                <li class="list-group">Click a character to play!</li>
+                <li class="list-group">Click Attack! to begin attacking</li>
+                <li class="list-group">When the opponenet runs out of HP, you win!</li>
+                <li class="list-group">When you run out of HP, you lose</li>
+                <li class="list-group">Try to defeat all three in a row!</li>
+            </ul>
+        </div>
+
+        <div class="row-md-12 text-white">
+            <div id="characterSelection" class="pb-4">
+            </div>
+
+            <div class="col-md-6 float-left clearfix">
+                <h2>Your Character</h2>
+                <div id="character">
+
+                </div>
+                <!-- Fight Section -->
+                <div id="fightSection" class="">
+                    <!-- Attack Button -->
+                    <button id="attack" class="btn btn-danger">Attack!</button>
+                </div>
+                <!-- Status -->
+                <div id="status">
+                </div>
+                <!-- Restart Button -->
+                <button id="restart" class="btn btn-success">Restart</button>
+            </div>
+            <!-- Defender and Enemies -->
+            <div class="col-md-6 float-left clearfix">
+                <h2>Defender</h2>
+                <div id="defender">
+                </div>
+                <h2>Enemies</h2>
+                <div id="defenderArea">
+
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div class="col-md-6 float-left clearfix">
-        <h2>Your Character</h2>
-        <div id="character">
 
-        </div>
-        <h2>Fight Section</h2>
-        <div id="fightSection">
-            <button id="attack" class="btn btn-danger">Attack!</button>
-        </div>
-
-        <div id="status">
-        </div>
-
-        <button id="restart" class="btn btn-success">Restart</button>
-    </div>
-    <div class="col-md-6 float-left clearfix">
-        <h2>Defender</h2>
-        <div id="defender">
-        </div>
-        <h2>Enemies</h2>
-        <div id="defenderArea">
-
-        </div>
-    </div>
-
-</div>
-
-    <footer class="fixed-bottom text-center">
-        Created by
+    <footer class="fixed-bottom text-center text-white">
+        &copy; Copyright 2018
         <img src="./assets/images/shotgun.jpg" width="25px" alt="shotgun" /> Thomas Headle
     </footer>
 
 
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
-        crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="./assets/javascript/game.js "></script>
 </body>
 
