@@ -24,7 +24,7 @@ $(document).ready(function () {
             attackPower: 10,
             counterAttackPower: 8,
             img: "./assets/images/survivor.jpg"
-        }
+        };
 
         zombieEasy = {
             id: 1,
@@ -34,7 +34,7 @@ $(document).ready(function () {
             attackPower: 8,
             counterAttackPower: 5,
             img: "./assets/images/zombieEasy.jpeg"
-        }
+        };
 
         zombieMedium = {
             id: 2,
@@ -44,7 +44,7 @@ $(document).ready(function () {
             attackPower: 10,
             counterAttackPower: 10,
             img: "./assets/images/zombieMedium.jpeg"
-        }
+        };
 
         zombieHard = {
             id: 3,
@@ -54,7 +54,7 @@ $(document).ready(function () {
             attackPower: 12,
             counterAttackPower: 15,
             img: "./assets/images/zombieHard.jpeg"
-        }
+        };
         // reset character selected
         character = null;
 
@@ -184,10 +184,10 @@ $(document).ready(function () {
 
             $("#status").html(status);
         }
-    })
+    });
 
     $("#restart").on("click", function () {
         startGame();
-    })
+    });
 
 });
