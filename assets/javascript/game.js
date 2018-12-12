@@ -141,8 +141,8 @@ $(document).ready(function () {
 
                 console.log("Defender: ", defender.name, defender.healthPoints);
 
-                // update defender HP
-                $("#" + defender.id + " .hp").html(defender.healthPoints);
+                // update defender HP (ASK WHY THIS IS WRITTEN THIS WAY)
+                $("#" + defender.id + " .hp").html(defender.healthPoints); 
 
                 // decrease character HP by defender counter attack power
                 character.healthPoints -= defender.counterAttackPower;
