@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Amatic+SC:700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Amatic+SC:700" rel="stylesheet">
+    
 
 </head>
 
@@ -39,31 +40,33 @@
         <div class="row-md-12 text-white">
             <div id="characterSelection" class="pb-4">
             </div>
+            <div class="row-md-12">
+                <div class="col-md-5 float-left">
+                    <h2>Your Character</h2>
+                    <div id="character">
 
-            <div class="col-md-6 float-left clearfix">
-                <h2>Your Character</h2>
-                <div id="character">
-
+                    </div>
+                    <!-- Fight Section -->
+                    <div class="col-md-2 center">
+                        <div id="fightSection" class="fightButton">
+                            <!-- Attack Button -->
+                            <button id="attack" class="btn btn-danger">Attack!</button>
+                        </div>
+                        <!-- Status -->
+                        <div id="status" class="text-white clearfix">
+                        </div>
+                        <!-- Restart Button -->
+                        <button id="restart" class="btn btn-success">Restart</button>
+                    </div>
                 </div>
-                <!-- Fight Section -->
-                <div id="fightSection" class="">
-                    <!-- Attack Button -->
-                    <button id="attack" class="btn btn-danger">Attack!</button>
-                </div>
-                <!-- Status -->
-                <div id="status">
-                </div>
-                <!-- Restart Button -->
-                <button id="restart" class="btn btn-success">Restart</button>
-            </div>
-            <!-- Defender and Enemies -->
-            <div class="col-md-6 float-left clearfix">
-                <h2>Defender</h2>
-                <div id="defender">
-                </div>
-                <h2>Enemies</h2>
-                <div id="defenderArea">
-
+                <!-- Defender and Enemies -->
+                <div class="col-md-5 float-left">
+                    <h2>Defender</h2>
+                    <div id="defender">
+                    </div>
+                    <h2>Enemies</h2>
+                    <div id="defenderArea">
+                    </div>
                 </div>
             </div>
         </div>
