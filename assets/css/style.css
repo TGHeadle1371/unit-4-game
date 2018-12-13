@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+/* Heading hover color */
+h1,h2:hover {
+    color:#cc0000;
+}
 
 
 /* Set background image to cover full site */
@@ -21,6 +25,10 @@
     font-size: 50px;
     margin-bottom: 15px;
     color: white;
+}
+/* hover color for title */
+#title:hover {
+    color: #cc0000;
 }
 
 /* Heading styling */
@@ -46,13 +54,30 @@ body {
     display: inline-block;
     text-align: center;
 }
+/* Character name text styling */
+.panel-heading {
+    font-family: 'Teko', sans-serif;
+    font-size: 24px;
+}
+
+/* Charcter name highlight */
+.panel-heading:hover {
+    color:#1aff1a;
+
+}
 
 /* Panel image styling */
 .panel img {
     max-height: 100%;
     height: 140px;
     width: auto;
-
+    border-radius: 1em;
+    box-shadow: 3px 5px #bbb7b7;
+    border: 1px solid rgba(85, 49, 49, 0.5);
+    /* for Safari */
+    -webkit-background-clip: padding-box;
+    /* for IE9+, Firefox 4+, Opera, Chrome */
+    background-clip: padding-box;
 }
 
 /* Font styling */
