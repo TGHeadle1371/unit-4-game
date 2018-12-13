@@ -199,7 +199,9 @@ $(document).ready(function () {
 
     $("#restart").on("click", function () {
         startGame();
+        alert("Turn down your volume!!");
         audio2.play();
+
 
     });
 
