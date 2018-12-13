@@ -4,6 +4,11 @@ $(document).ready(function () {
 
     // Variables
 
+    var audio1 = document.createElement('audio');
+    audio1.setAttribute('src', './assets/audio/mummySound.mp3');
+    var audio2 = document.createElement('audio');
+    audio2.setAttribute('src', './assets/audio/thriller.mp3');
+
     var survivor;
     var zombieEasy;
     var zombieMedium;
@@ -134,10 +139,12 @@ $(document).ready(function () {
 
             // when defender has been selected
             if (defender !== null) {
+                
 
                 
                 // decrease defender HP by character attack power
                 defender.healthPoints -= character.attackPower;
+                audio1.play();
 
                 
                 //Add to status attack text, for attackPower
@@ -192,6 +199,8 @@ $(document).ready(function () {
 
     $("#restart").on("click", function () {
         startGame();
+        audio2.play();
+        
     });
 
 });
