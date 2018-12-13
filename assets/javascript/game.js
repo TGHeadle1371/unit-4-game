@@ -139,14 +139,14 @@ $(document).ready(function () {
 
             // when defender has been selected
             if (defender !== null) {
-                
 
-                
+
+
                 // decrease defender HP by character attack power
                 defender.healthPoints -= character.attackPower;
                 audio1.play();
 
-                
+
                 //Add to status attack text, for attackPower
                 status += "You attacked " + defender.name + " for " + character.attackPower + " damage.<br>";
 
@@ -200,7 +200,7 @@ $(document).ready(function () {
     $("#restart").on("click", function () {
         startGame();
         audio2.play();
-        
+
     });
 
 });
