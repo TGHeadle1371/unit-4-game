@@ -1,11 +1,10 @@
-html {
+.container-fluid {
     width: 100%;
-    height: 250%;
+    height: auto;
     background-image: url('../images/logo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    
 }
 
 #title {
@@ -22,16 +21,11 @@ h2 {
     padding-bottom: 10px;
 }
 
-body {
-    opacity: 0.4;
-    background-color: black;
-    position: absolute;
+ body {
     text-align: center;
     align-content: center;
-    width: 100%;
-    height: 100%;
 
-}
+} 
 
 .panel {
     /*width: 22%;*/
@@ -60,16 +54,17 @@ body {
     padding: 10px;
 }
 
-#restart {
+/* #restart {
     position: absolute;
     top: 50%;
     left: 90%;
     transform: translate(-50%, -50%);
-}
+} */
 
 .fightSection {
     background: none;
     align-content: center;
+    
 }
 
 .status {
