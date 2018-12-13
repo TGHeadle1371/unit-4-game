@@ -114,19 +114,25 @@ $(document).ready(function () {
                         console.log(this);
                         defender = characterSelection[defenderId];
                         $("#" + defenderId).appendTo("#defender");
+                        
                     }
                 });
             }
         });
         //Hide restart button
         $("#restart").hide();
+        // hide flash css
+        $('.flash').hide();
     }
         //Run restart function
     startGame();
-
+    
+    
 
     //On Click event for attack button
     $("#attack").on("click", function () {
+
+    
         // when character has been selected, character has not been defeated and there are still defenders left
         if (character !== null && character.healthPoints > 0 && defenders.length > 0) {
             // created variable to store game status messages
@@ -135,7 +141,11 @@ $(document).ready(function () {
             // when defender has been selected
             if (defender !== null) {
                 // decrease defender HP by character attack power
+                
+                document.getElementById('audiotag1').load();
                 defender.healthPoints -= character.attackPower;
+                // Audio
+                document.getElementById('audiotag1').play();
                 //Add to status attack text, for attackPower
                 status += "You attacked " + defender.name + " for " + character.attackPower + " damage.<br>";
 
@@ -156,7 +166,7 @@ $(document).ready(function () {
 
                 // increase character attack power by base attack power
                 character.attackPower += character.baseAttack;
-
+                
                 // when character is defeated
                 if (character.healthPoints <= 0) {
                     status = "You didn't survive... Do you wish to play again?";
@@ -188,6 +198,11 @@ $(document).ready(function () {
 
     $("#restart").on("click", function () {
         startGame();
+        //audio tags for restart
+        document.getElementById('audiotag2').load();
+        document.getElementById('audiotag2').play();
+        // Flashing background
+        $('.flash').show(); 
     });
 
 });
