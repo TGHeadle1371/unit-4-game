@@ -11,91 +11,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Trying to add flashing background with the music -->
-<style id="flash">
-    @-webkit-keyframes argh-my-eyes {
-        0% {
-            background-color: #fff;
-        }
-
-        49% {
-            background-color: #fff;
-        }
-
-        50% {
-            background-color: #000;
-        }
-
-        99% {
-            background-color: #000;
-        }
-
-        100% {
-            background-color: #fff;
-        }
-    }
-
-    @-moz-keyframes argh-my-eyes {
-        0% {
-            background-color: #fff;
-        }
-
-        49% {
-            background-color: #fff;
-        }
-
-        50% {
-            background-color: #000;
-        }
-
-        99% {
-            background-color: #000;
-        }
-
-        100% {
-            background-color: #fff;
-        }
-    }
-
-    @keyframes argh-my-eyes {
-        0% {
-            background-color: #fff;
-        }
-
-        49% {
-            background-color: #51D0A0;
-        }
-
-        50% {
-            background-color: #000;
-        }
-
-        99% {
-            background-color: #EF1ED7;
-        }
-
-        100% {
-            background-color: #ffff00;
-        }
-    }
-
-    body {
-        -webkit-animation: argh-my-eyes 1s infinite;
-        -moz-animation: argh-my-eyes 1s infinite;
-        animation: argh-my-eyes 1s infinite;
-        z-index: 2;
-    }
-    .container-fluid {
-        z-index: 1;
-    }
-</style>
 
 </head>
 
 <body>
     <!-- container -->
     <div class="container-fluid">
-        
 
         <!-- Title Row -->
         <div class="row-md-12 mt-3">
@@ -131,8 +52,7 @@
 
                         <!-- Attack Button -->
                         <button id="attack" class="btn btn-danger mb-4">Attack!</button>
-                        <audio id="audiotag1" src="./assets/audio/mummySound.mp3" preload="auto"></audio>
-                        <audio id="audiotag2" src="./assets/audio/thriller.mp3" preload="auto"></audio>
+
                         <!-- Restart Button -->
                         <button id="restart" class="btn btn-success mb-4">Restart</button>
 
@@ -145,10 +65,11 @@
                 <div class="span-md-4 pt-2 pb-5">
                     <h2>Defender</h2>
                     <div id="defender">
-
                     </div>
                     <h2>Enemies</h2>
                     <div id="defenderArea">
+                        <audio id="audiotag1" src="./assets/audio/mummySound.mp3" preload="auto"></audio>
+                        <audio id="audiotag2" src="./assets/audio/thriller.mp3" preload="auto"></audio>
                     </div>
                 </div>
             </div>
