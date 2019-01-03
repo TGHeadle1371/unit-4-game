@@ -25,4 +25,6 @@ When the defender's HP is reduced to zero or below, remove the enemy from the de
 
 The player wins the game by defeating all enemy characters. The player loses the game the game if their character's HP falls to zero or below.
 
+Live version here: https://tgheadle1371.github.io/unit-4-game/index.html
+
 ![Image of Webpage](/assets/images/screenshot.png?raw=true "Game Page")
