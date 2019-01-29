@@ -1,5 +1,5 @@
 # Zombie Fighting RPG
-[Live version](https://tgheadle1371.github.io/unit-4-game/index.html/)
+[Live version](https://tgheadle1371.github.io/unit-4-game/)
 
 ### Instructions
 - On start, the player will choose a character by clicking on the picture. 
